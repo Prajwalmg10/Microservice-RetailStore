@@ -5,10 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration;
 
 @SpringBootApplication(exclude = {SecurityAutoConfiguration.class})
-//@EnableAutoConfiguration
-//@EnableWebMvc
-//@CrossOrigin("*")
-//@ComponentScan("com.example.retailStore")
+
 public class ProductApplication {
 
 	public static void main(String[] args) {
