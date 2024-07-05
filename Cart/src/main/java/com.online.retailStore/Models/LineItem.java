@@ -5,7 +5,7 @@ import lombok.Data;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "item")
+@Table(name = "cart_item")
 @Data
 public class LineItem {
     @Id
