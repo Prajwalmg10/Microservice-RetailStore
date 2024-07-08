@@ -18,4 +18,6 @@ public class StringConstants {
     public static final String SUCCESS = "Success";
     public static final String PRODUCT_QUANTITY_REQUIRED = "Product quantity is required";
     public static final String INVALID_INVENTORY_ID = "Invalid Inventory Id";
+    public static final String EMPTY_ITEM = "Item is empty";
+    public static final String INVALID_ORDER_ID = "Invalid Order Id";
 }
