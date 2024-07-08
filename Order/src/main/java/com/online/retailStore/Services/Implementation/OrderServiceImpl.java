@@ -31,8 +31,8 @@ public class OrderServiceImpl implements OrderServices {
 
     @Override
     public String deleteOrder(int orderId) throws DataException {
-        Product product=searchOrder(orderId);
-        if(NullEmptyUtils.isNull(product)){
+        Order order=getOrder(orderId);
+        if(NullEmptyUtils.isNull(order)){
             throw new DataException(StringConstants.EXCEPTION,StringConstants.INVALID_PRODUCT_ID,HttpStatus.BAD_REQUEST);
         }
         return StringConstants.SUCCESS;
@@ -42,10 +42,10 @@ public class OrderServiceImpl implements OrderServices {
     public Order updateOrder(Order order) throws DataException {
         ValidationHelper.validateOrder(order);
         if(NullEmptyUtils.isNullorEmpty(order.getOrderId())){
-            throw new DataException(StringConstants.EXCEPTION,StringConstants.INVALID_PRODUCT_ID,HttpStatus.BAD_REQUEST);
+            throw new DataException(StringConstants.EXCEPTION,StringConstants.INVALID_ORDER_ID,HttpStatus.BAD_REQUEST);
         }
         try{
-            return productRepository.save(order);
+            return orderRepository.save(order);
         }catch (Exception e){
             throw new DataException(StringConstants.EXCEPTION,e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
         }
