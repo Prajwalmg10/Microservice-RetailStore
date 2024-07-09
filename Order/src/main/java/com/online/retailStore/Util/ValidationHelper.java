@@ -12,6 +12,9 @@ public class ValidationHelper {
         if(NullEmptyUtils.isNull(order.getLineItems())){
             throw new DataException(StringConstants.EXCEPTION,StringConstants.EMPTY_ITEM,HttpStatus.BAD_REQUEST);
         }
+        for (LineItem lineitem : order.getLineItems()){
+            validateItem(lineitem);
+        }
     }
 
     public static void validateItem(LineItem lineItem) throws DataException{
