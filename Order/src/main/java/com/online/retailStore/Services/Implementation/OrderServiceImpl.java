@@ -33,7 +33,7 @@ public class OrderServiceImpl implements OrderServices {
     public String deleteOrder(int orderId) throws DataException {
         Order order=getOrder(orderId);
         if(NullEmptyUtils.isNull(order)){
-            throw new DataException(StringConstants.EXCEPTION,StringConstants.INVALID_PRODUCT_ID,HttpStatus.BAD_REQUEST);
+            throw new DataException(StringConstants.EXCEPTION,StringConstants.INVALID_ORDER_ID,HttpStatus.BAD_REQUEST);
         }
         return StringConstants.SUCCESS;
     }
@@ -54,7 +54,7 @@ public class OrderServiceImpl implements OrderServices {
     @Override
     public Order getOrder(int orderId) throws DataException {
         if(NullEmptyUtils.isNullorEmpty(orderId)){
-            throw new DataException(StringConstants.EXCEPTION,StringConstants.INVALID_PRODUCT_ID,HttpStatus.BAD_REQUEST);
+            throw new DataException(StringConstants.EXCEPTION,StringConstants.INVALID_ORDER_ID,HttpStatus.BAD_REQUEST);
         }
         return orderRepository.findById(orderId).get();
     }
