@@ -34,7 +34,7 @@ public class SwaggerConfiguration {
                 .useDefaultResponseMessages(false)
                 .pathMapping("/")
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.example.retailStore"))
+                .apis(RequestHandlerSelectors.basePackage("com.online.retailStore"))
                 .paths(PathSelectors.any())
                 .build();
     }
