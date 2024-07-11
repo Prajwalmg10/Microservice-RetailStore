@@ -25,10 +25,6 @@ public class InventoryServiceImpl implements InventoryServices {
     public Inventory addToInventory(Inventory inventory) throws DataException {
         try{
             ValidationHelper.validateInventory(inventory);
-//            Optional<Product> product=productRepository.findById(inventory.getProductId());
-//            if(product.isEmpty()){
-//                throw new DataException(Inventory.src.main.com.retailStore.Util.StringConstants.EXCEPTION,StringConstants.INVALID_PRODUCT_ID,HttpStatus.BAD_REQUEST);
-//            }
             return inventoryRepository.save(inventory);
         }catch (DataException e){
             throw e;
@@ -67,10 +63,6 @@ public class InventoryServiceImpl implements InventoryServices {
             if(inventoryBean.isEmpty()){
                 throw new DataException(StringConstants.EXCEPTION,StringConstants.INVALID_INVENTORY_ID,HttpStatus.BAD_REQUEST);
             }
-//            Optional<Product> product=productRepository.findById(inventory.getProductId());
-//            if(product.isEmpty()){
-//                throw new DataException(StringConstants.EXCEPTION,StringConstants.INVALID_PRODUCT_ID,HttpStatus.BAD_REQUEST);
-//            }
             return inventoryRepository.save(inventory);
         }catch (DataException e){
             throw e;
