@@ -1,7 +1,7 @@
 package com.online.retailStore.Services;
 
 import com.online.retailStore.Models.CustomerAddress;
-import com.online.retailStore.uiResponse.DataException;
+import com.online.retailStore.UiResponse.DataException;
 
 public interface AddressServices {
     CustomerAddress saveAddress(CustomerAddress address, String type) throws DataException;

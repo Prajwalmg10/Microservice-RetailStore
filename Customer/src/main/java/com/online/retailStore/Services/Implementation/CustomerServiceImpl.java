@@ -7,7 +7,7 @@ import com.online.retailStore.Services.CustomerServices;
 import com.online.retailStore.Util.NullEmptyUtils;
 import com.online.retailStore.Util.StringConstants;
 import com.online.retailStore.Util.ValidationHelper;
-import com.online.retailStore.uiResponse.DataException;
+import com.online.retailStore.UiResponse.DataException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

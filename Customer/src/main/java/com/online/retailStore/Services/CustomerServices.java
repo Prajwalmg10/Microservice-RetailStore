@@ -1,7 +1,7 @@
 package com.online.retailStore.Services;
 
 import com.online.retailStore.Models.Customer;
-import com.online.retailStore.uiResponse.DataException;
+import com.online.retailStore.UiResponse.DataException;
 
 public interface CustomerServices {
     Customer saveCustomer(Customer customerModel) throws DataException;
