@@ -1,7 +1,7 @@
 package com.online.retailStore.Services;
 
 import com.online.retailStore.Models.Cart;
-import com.online.retailStore.uiResponse.DataException;
+import com.online.retailStore.UiResponse.DataException;
 
 public interface CartServices {
 

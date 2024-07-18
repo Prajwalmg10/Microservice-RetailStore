@@ -1,8 +1,8 @@
 package com.online.retailStore.Controllers;
 
-import com.online.retailStore.uiResponse.DataException;
-import com.online.retailStore.uiResponse.UIResponse;
-import com.online.retailStore.uiResponse.UiError;
+import com.online.retailStore.UiResponse.DataException;
+import com.online.retailStore.UiResponse.UIResponse;
+import com.online.retailStore.UiResponse.UiError;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 

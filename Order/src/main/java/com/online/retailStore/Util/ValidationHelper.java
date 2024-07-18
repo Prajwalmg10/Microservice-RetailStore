@@ -3,7 +3,7 @@ package com.online.retailStore.Util;
 
 import com.online.retailStore.Models.LineItem;
 import com.online.retailStore.Models.Order;
-import com.online.retailStore.uiResponse.DataException;
+import com.online.retailStore.UiResponse.DataException;
 import org.springframework.http.HttpStatus;
 
 public class ValidationHelper {

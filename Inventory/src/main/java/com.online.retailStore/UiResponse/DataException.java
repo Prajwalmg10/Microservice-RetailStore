@@ -1,4 +1,4 @@
-package com.online.retailStore.uiResponse;
+package com.online.retailStore.UiResponse;
 import org.springframework.http.HttpStatus;
 
 public class DataException extends Exception {

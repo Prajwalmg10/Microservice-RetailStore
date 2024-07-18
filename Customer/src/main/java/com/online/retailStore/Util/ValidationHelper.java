@@ -2,7 +2,7 @@ package com.online.retailStore.Util;
 
 import com.online.retailStore.Models.Customer;
 import com.online.retailStore.Models.CustomerAddress;
-import com.online.retailStore.uiResponse.DataException;
+import com.online.retailStore.UiResponse.DataException;
 import org.springframework.http.HttpStatus;
 
 public class ValidationHelper {

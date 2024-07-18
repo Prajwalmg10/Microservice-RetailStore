@@ -1,6 +1,5 @@
-package com.online.retailStore.uiResponse;
+package com.online.retailStore.UiResponse;
 
-import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 

@@ -2,7 +2,7 @@ package com.online.retailStore.Controllers;
 
 import com.online.retailStore.Models.Order;
 import com.online.retailStore.Services.OrderServices;
-import com.online.retailStore.uiResponse.DataException;
+import com.online.retailStore.UiResponse.DataException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
