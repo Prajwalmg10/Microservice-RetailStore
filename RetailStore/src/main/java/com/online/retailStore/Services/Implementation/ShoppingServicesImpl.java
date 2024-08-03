@@ -17,12 +17,11 @@ public class ShoppingServicesImpl implements com.online.retailStore.Services.Sho
     @Override
     public Product createProduct(Product product) throws DataException {
         try{
-            wsClientTemplate.invokeRESTService("",product, MediaType.APPLICATION_JSON, HttpMethod.POST);
+            return (Product) wsClientTemplate.invokeRESTService("",product, MediaType.APPLICATION_JSON, HttpMethod.POST);
 
         }
         catch (Exception e){
             throw new DataException(StringConstants.EXCEPTION, e.getMessage(), HttpStatus.CONFLICT);
         }
-        return null;
     }
 }
